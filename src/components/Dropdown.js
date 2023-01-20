@@ -14,7 +14,7 @@ export function Dropdown() {
 
     return (
         <Box sx={{ minWidth: 300 }}>
-            <FormControl sx={{ width: "50%" }}>
+            <FormControl sx={{ width: "30%" }}>
                 <InputLabel id="select-report">Select Expenditure Type</InputLabel>
                 <Select
                     labelId="select-report"

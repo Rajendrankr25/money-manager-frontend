@@ -1,6 +1,6 @@
 import { AppBar, Button, Toolbar } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import { PopModal } from "./PopModal";
+import HomeIcon from '@mui/icons-material/Home';
 
 export function Navigation() {
 
@@ -16,7 +16,7 @@ export function Navigation() {
                         <span className="nav-logo-text">Money Manager</span>
                     </div>
                     <div>
-                        <Button color="inherit" onClick={() => navigate("/")}>Home</Button>
+                        <Button color="inherit" onClick={() => navigate("/")}><HomeIcon /></Button>
                         {/* <Button color="inherit" onClick={() => navigate("/addexp")}>Add Expenses</Button> */}
                     </div>
                 </Toolbar>

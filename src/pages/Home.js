@@ -1,8 +1,9 @@
 import { Dropdown } from "../components/Dropdown";
 import { ExpTable } from "../components/ExpTable";
+import { IncTable } from "../components/IncTable";
 import { PopModal } from "../components/PopModal";
 
-export function Home({ expdata }) {
+export function Home({ expData, incData }) {
     return (
         <div>
             <div className="home-container">
@@ -15,7 +16,9 @@ export function Home({ expdata }) {
                 <br />
                 <Dropdown />
                 <br />
-                <ExpTable expdata={expdata} />
+                <ExpTable expData={expData} />
+                <br />
+                <IncTable incData={incData} />
                 <br />
             </div>
         </div>

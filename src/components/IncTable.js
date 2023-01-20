@@ -7,21 +7,21 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-export function ExpTable({ expData }) {
+export function IncTable({ incData }) {
 
     return (
         <TableContainer component={Paper}>
-            <h3>Expenses Details</h3>
+            <h3>Income Details</h3>
             <Table sx={{ minWidth: 650, textAlign: "center" }} aria-label="simple table">
                 <TableHead>
                     <TableRow>
                         <TableCell>Date</TableCell>
-                        <TableCell>Expense Description</TableCell>
+                        <TableCell>Income Description</TableCell>
                         <TableCell>Amount</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    {expData.map((row, index) => (
+                    {incData.map((row, index) => (
                         <TableRow
                             key={index}
                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
@@ -29,7 +29,7 @@ export function ExpTable({ expData }) {
                             <TableCell component="th" scope="row">
                                 {row.date}
                             </TableCell>
-                            <TableCell>{row.expdesc}</TableCell>
+                            <TableCell>{row.incdesc}</TableCell>
                             <TableCell>{row.amount}</TableCell>
                         </TableRow>
                     ))}

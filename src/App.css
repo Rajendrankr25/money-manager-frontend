@@ -1,38 +1,40 @@
 .App {
+  font-family: Roboto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-logo-text {
+  font-size: 23px;
+  font-family: 'Satisfy', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  gap: 6px;
+}
+
+.modal-btn,
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addexp-form,
+.addincome-form {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  gap: 24px;
+  width: 25%;
 }
 
-.App-link {
-  color: #61dafb;
+.pop-btn {
+  text-align: right;
+  margin-right: 2%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-bar {
+  background-color: black !important;
 }

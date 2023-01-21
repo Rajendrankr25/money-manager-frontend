@@ -1,9 +1,10 @@
+import { Card } from "@mui/material";
 import { Dropdown } from "../components/Dropdown";
-import { ExpTable } from "../components/ExpTable";
-import { IncTable } from "../components/IncTable";
+import { ExpPopModal } from "../components/ExpPopModal";
+import { IncPopModal } from "../components/IncPopModal";
 import { PopModal } from "../components/PopModal";
 
-export function Home({ expData, incData }) {
+export function Home() {
     return (
         <div>
             <div className="home-container">
@@ -11,15 +12,28 @@ export function Home({ expData, incData }) {
                 <div className="pop-btn">
                     <PopModal />
                 </div>
-                <h1>Hi Welcome!!!</h1>
-                <h2>Money Manager Dashboard</h2>
-                <br />
-                <Dropdown />
-                <br />
-                <ExpTable expData={expData} />
-                <br />
-                <IncTable incData={incData} />
-                <br />
+                <Card className="home-card">
+                    <h1>Hi Welcome!!!</h1>
+                    <h2>Money Manager Dashboard</h2>
+                    <br />
+                    <HomeDiv />
+                    <br />
+                    <Dropdown />
+                    <br />
+                </Card>
+            </div>
+        </div>
+    )
+}
+
+function HomeDiv() {
+    return (
+        <div className="homediv-container">
+            <div>
+                <ExpPopModal />
+            </div>
+            <div>
+                <IncPopModal />
             </div>
         </div>
     )

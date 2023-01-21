@@ -3,6 +3,13 @@
   text-align: center;
 }
 
+body {
+  background-image: url(./FWall1.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
 .nav-logo-text {
   font-size: 23px;
   font-family: 'Satisfy', cursive;
@@ -21,6 +28,12 @@
   justify-content: space-between;
 }
 
+.homediv-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .addexp-form,
 .addincome-form {
   display: flex;
@@ -28,6 +41,8 @@
   flex-direction: column;
   gap: 24px;
   width: 25%;
+  padding: 16px;
+  margin: 16px;
 }
 
 .pop-btn {
@@ -37,4 +52,14 @@
 
 .app-bar {
   background-color: hsl(240deg 4% 13%) !important;
+}
+
+.home-card {
+  padding: 16px;
+  margin: 24px;
+}
+
+.exp-table,
+.inc-table {
+  text-align: center;
 }

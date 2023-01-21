@@ -18,7 +18,6 @@ export function AddIncome() {
             amount: amount
         }];
         addNewInc(newInc);
-        console.log(newInc);
     };
 
     const addNewInc = (newInc) => {

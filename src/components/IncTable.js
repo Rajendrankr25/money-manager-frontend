@@ -29,7 +29,7 @@ export function IncTable() {
         fetch(`${API}/income/${incId}`, {
             method: "DELETE"
         }).then(() => getIncome());
-    }
+    };
 
     return (
         <TableContainer component={Paper} className='inc-table'>

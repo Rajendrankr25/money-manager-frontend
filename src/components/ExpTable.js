@@ -28,8 +28,8 @@ export function ExpTable() {
     const deleteExp = (expId) => {
         fetch(`${API}/expenses/${expId}`, {
             method: "DELETE"
-        }).then(() => getExpenses());
-    }
+        }).then((dt) => getExpenses());
+    };
 
     return (
         <TableContainer component={Paper} className='exp-table'>

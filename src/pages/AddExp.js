@@ -18,7 +18,6 @@ export function AddExp() {
             amount: amount
         }];
         addNewExp(newExp);
-        console.log(newExp);
     };
 
     const addNewExp = (newExp) => {
